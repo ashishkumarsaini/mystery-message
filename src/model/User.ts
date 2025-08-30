@@ -1,8 +1,6 @@
 import mongoose, { Schema, Document } from "mongoose";
 import { MessageInterface, MessageSchema } from "./Message";
 
-
-
 export interface UserInterface extends Document {
     username: string,
     email: string,
