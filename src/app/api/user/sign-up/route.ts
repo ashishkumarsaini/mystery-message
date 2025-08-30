@@ -4,15 +4,6 @@ import { sendVerificationEmail } from "@/services/email/sendVerificationEmail";
 import bcrypt from 'bcryptjs';
 
 export async function POST(request: Request) {
-    if (request.method !== 'POST') {
-        return Response.json({
-            success: false,
-            message: 'Method not allowed',
-        }, {
-            status: 405
-        });
-    }
-
     await dbConnect();
 
     try {
