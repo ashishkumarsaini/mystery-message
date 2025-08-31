@@ -1,5 +1,6 @@
-import { perplexityProvider } from "@/lib/perplexity/perplexity";
 import { APICallError, generateText } from "ai";
+
+import { perplexityProvider } from "@/lib/perplexity/perplexity";
 const prompt = "Suggest me some movie names in a single string divided by '|'";
 
 export async function PUT() {

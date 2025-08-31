@@ -1,8 +1,10 @@
-import { dbConnect } from "@/lib/database/dbConnect";
-import { authOptions } from "../../auth/options";
-import { getServerSession } from "next-auth/next";
-import { UserModel } from "@/model/User";
 import mongoose from "mongoose";
+import { getServerSession } from "next-auth/next";
+
+import { dbConnect } from "@/lib/database/dbConnect";
+import { UserModel } from "@/model/User";
+
+import { authOptions } from "../../auth/options";
 
 export async function GET() {
     await dbConnect();

@@ -1,5 +1,6 @@
 import { resend } from '@/lib/email/resend';
-import { VerificationEmailResponse } from '@/types/ApiResponse';
+import { type VerificationEmailResponse } from '@/types/ApiResponse';
+
 import { VerificationEmailTemplate } from '../../../emails/VerificationEmail';
 
 export const sendVerificationEmail = async (email: string, verifyCode: string): Promise<VerificationEmailResponse> => {

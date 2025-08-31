@@ -1,5 +1,6 @@
-import mongoose, { Schema, Document } from "mongoose";
-import { MessageInterface, MessageSchema } from "./Message";
+import mongoose, { Schema, type Document } from "mongoose";
+
+import { type MessageInterface, MessageSchema } from "./Message";
 
 export interface UserInterface extends Document {
     username: string,

@@ -1,8 +1,9 @@
+import bcrypt from "bcryptjs";
+import { type JWT, type NextAuthOptions, type Session, type User } from "next-auth";
+import CredentialsProvider from "next-auth/providers/credentials"
+
 import { dbConnect } from "@/lib/database/dbConnect";
 import { UserModel } from "@/model/User";
-import bcrypt from "bcryptjs";
-import { JWT, NextAuthOptions, Session, User } from "next-auth";
-import CredentialsProvider from "next-auth/providers/credentials"
 
 export const authOptions: NextAuthOptions = {
     providers: [
